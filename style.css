@@ -48,7 +48,7 @@ body {
 .banner {
   display: flex;
   width: 80%;
-  margin: 50px auto;
+  margin: auto;
   justify-content: space-around;
   text-align: center;
   color: orange;
@@ -57,6 +57,7 @@ body {
 .hakataya {
   font-family: "Shadows Into Light", cursive;
   font-size: 80px;
+  border-bottom: 7px double orange;
 }
 
 .image-container {
