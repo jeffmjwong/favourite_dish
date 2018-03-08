@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+
+.main-body {
+}
+
+.logo-container {
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+#logo-img {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-section {
+  display: flex;
+  width: 100%;
+}
+
+.main-nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.main-nav a {
+  flex: 1;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+.image-container {
+  text-align: center;
+  width: 80%;
+  margin: 50px auto;
+  border: 5px solid white;
+}
+
+#ramen-img {
+  width: 100%;
+}
+
+.article-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.ingredient-section {
+  border: 5px solid white;
+  width: 30%;
+  padding: 15px;
+}
+
+.instructions-section {
+  border: 5px solid white;
+  width: 70%;
+  padding: 15px;
+}
+
+/* 700px or less(mobile phones) */
+@media screen and (max-width: 700px) {
+  .logo-container {
+    display: block;
+  }
+  .main-nav a {
+    flex: auto;
+    width: 100%;
+    display: block;
+  }
+  .ingredient-section, .instructions-section {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
