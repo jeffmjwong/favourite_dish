@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
-  background-color: lightblue;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(to left, #bbbbbb, #eeeeee);
 }
 
 .main-body {
@@ -29,17 +33,28 @@
   flex-wrap: wrap;
   justify-content: space-around;
   overflow: hidden;
-  background-color: #333;
 }
 
 .main-nav a {
   flex: 1;
   color: white;
-  background-color: black;
+  background-color: #333333;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   border: 2px solid white;
+}
+
+.banner {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  color: orange;
+}
+
+.hakataya {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 80px;
 }
 
 .image-container {
@@ -61,13 +76,13 @@
 }
 
 .ingredient-section {
-  border: 5px solid white;
+  border: 3px solid white;
   width: 30%;
   padding: 15px;
 }
 
 .instructions-section {
-  border: 5px solid white;
+  border: 3px solid white;
   width: 70%;
   padding: 15px;
 }
@@ -86,5 +101,6 @@
     display: block;
     width: 100%;
     margin-bottom: 30px;
+    border: 0;
   }
 }
