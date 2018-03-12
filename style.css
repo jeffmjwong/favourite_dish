@@ -4,147 +4,146 @@
 }
 
 body {
-  background: linear-gradient(to left, #bbbbbb, #eeeeee);
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(to left, #bbbbbb, #eeeeee); */
 }
 
-.main-body {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-row-gap: 2em;
+}
+
+/* .box {
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+} */
+
+.first-row {
+  height: 100px;
+  grid-column: 1 / 12;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-row {
+  height: auto;
+  padding: 0;
+  grid-column: 1 / 12;
+  display: flex;
+  justify-content: center;
+}
+
+.third-row {
+  height: auto;
+  grid-column: 2 / 11;
+}
+
+.forth-row {
+  height: auto;
+  grid-column: 2 / 11;
+  display: flex;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3);
+}
+
+.fifth-row {
+  height: 100px;
+  grid-column: 1 / 12;
+  background-color: #2e2729;
 }
 
 .logo-container {
-  width: 100%;
-  display: none;
+  height: 100px;
+  width: 100px;
   text-align: center;
 }
 
 #logo-img {
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 
-.nav-section {
+.recipe-container {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50%;
 }
 
-.main-nav {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  overflow: hidden;
-}
-
-.main-nav a {
-  flex: 1;
-  color: white;
-  background-color: #333333;
-  text-align: center;
-  padding: 14px 16px;
+.recipe-container a {
+  padding: 1em;
   text-decoration: none;
-  border: 2px solid white;
+  /* border: 2px blue solid; */
 }
 
-.banner {
+.about-container {
+  text-align: center;
   display: flex;
-  width: 80%;
-  margin: auto;
-  justify-content: space-around;
-  text-align: center;
-  color: orange;
+  align-items: flex-end;
 }
 
-.hakataya {
+.about {
+
+}
+
+.food-title {
   font-family: "Shadows Into Light", cursive;
-  font-size: 80px;
-  border-bottom: 7px double orange;
-}
-
-.image-container {
-  text-align: center;
-  width: 80%;
-  margin: 50px auto;
-  border: 5px solid white;
+  font-size: 5em;
+  margin: auto;
 }
 
 #ramen-img {
   width: 100%;
+  border-radius: 0.5em;
+  opacity: 0.8;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.5);
 }
 
-.article-section {
+.ingredients-container {
+  width: 33%;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  /* border-top: 10px solid red; */
+}
+
+.ingredients {
+  background-color: #fefbfa;
+}
+
+.instructions {
+  background-color: #f9f1ed;
+}
+
+.fun {
+  background-color: #fefbfa;
+}
+
+.instructions-container {
+  width: 34%;
+}
+
+.fun-fact-container {
+  width: 33%;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.article-title {
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
 }
 
-.ingredient-section {
-  border: 3px solid white;
-  width: 30%;
-  padding: 15px;
+.article-title h2 {
+  margin: 0;
 }
 
-.instructions-section {
-  border: 3px solid white;
-  width: 70%;
-  padding: 15px;
-}
-
-.loader {
-  display: flex;
-  transform: rotate();
-  margin-top: 100px;
-  width: 150px;
-  height: 60px;
-  border: 5px solid white;
-}
-
-span {
-  top: 100px;
-  width: 50px;
-  height: 50px;
-  background-color: orange;
-  display: block;
-  float: left;
-  animation: animate 2s linear infinite;
-}
-
-span:nth-child(3) {
-  animation-delay: 0.8s;
-}
-
-span:nth-child(2),
-span:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-span:nth-child(1),
-span:nth-child(5),
-span:nth-child(9) {
-  animation-delay: 0.4s;
-}
-
-span:nth-child(4),
-span:nth-child(8) {
-  animation-delay: 0.2s;
-}
-
-@keyframes animate {
-  0% {
-    transform: scale(1);
-  }
-  30% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  75% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.article-main {
+  padding: 1.5em;
 }
 
 /* 700px or less(mobile phones) */
